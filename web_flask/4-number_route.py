@@ -40,7 +40,7 @@ def p_text(text):
     return 'Python {}'.format(text)
 
 
-@app.route("/number/<n>", strict_slashes=False)
+@app.route("/number/<int:n>", strict_slashes=False)
 def n_number(n):
     """n is a number"""
     return "{} is a number".format(n)
