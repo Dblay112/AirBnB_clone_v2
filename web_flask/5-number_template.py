@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """a script that starts a Flask web application:
-
 Your web application must be on 0.0.0.0, port 5000
 Routes:
 /: display “Hello HBNB!”
@@ -45,7 +44,6 @@ def p_text(text):
 def n_number(n):
     """n is a number"""
     return "{} is a number".format(n)
-
 
 
 @app.route("/number_template/<int:n>", strict_slashes=False)
